@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-commerce</title>
+	
+    <link rel="icon" type="image/png" href="https://www.dynamicmarketing.eu/wp-content/uploads/2018/06/ecommerce.logo_.png"></head>
+    <meta name="view port" content="width = divice-width , initial-scale=1">
+    <style type="text/css">
+    nav.Nav_menu{
+	background-color: #456C82;
+	color: #231D1D;
+	text-align: center;
+	text-shadow: 1px;
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+}
+p.Title{
+    padding-top: 10px;
+	padding-bottom: 10px;}
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color: #BBD2DF;
+}
+div.Inscription{
+	text-align: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+input[type=button] {
+  background-color: #437090;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-decoration: none;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #344F6E;
+}
+input[type=button]:hover{
+	background-color: #D2DEEA;
+	border-radius: 5px;
+	margin: 10px 10px;
+	color: #437090;
+}
+input[type=text] {
+    border: 1px solid #344F6E;
+    border-radius: 5px; 
+    background-color: #437090;
+    color: white;
+    padding: 5px 20px;
+    margin: 10px 10px;
+}
+input[type=text]:focus {
+      border: 2px solid #344F6E;
+      background-color: #5279A4; 
+
+}
+input[type=password] {
+    border: 1px solid #344F6E;
+    border-radius: 5px; 
+    background-color: #437090;
+    color: white;
+    padding: 5px 20px;
+    margin: 10px 10px;
+    text-align: center;
+}
+input[type=password]:focus {
+      border: 2px solid #344F6E;
+      background-color: #5279A4; 
+}
+input[type=Recherche] {
+    width: 150px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    background-image: url('https://cdn.bitdegree.org/learn/search-icon.png?229dfb2d');
+    background-size: 10px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-color: #5279A4;
+    border: 1px solid #344F6E;
+    color: #C5D2D9;
+    border-radius: 5px;
+
+}
+
+input[type=Recherche]:focus {
+    width: 30%;
+    border-radius: 5px;
+}
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #3F576F;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #1D3042;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #3F576F;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #496D90;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #496D90;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.row{
+	width: 100%;
+}
+@media (min-width: 992px){
+	.col-lg-1,.col-lg-2,.col-lg-3 ,.col-lg-4 ,.col-lg-5 ,.col-lg-6 ,.col-lg-7 ,.col-lg-8 ,.col-lg-9 ,.col-lg-10 ,.col-lg-11 ,.col-lg-12{
+		float: left;
+	}
+	.col-lg-1{
+		width:8.33%;
+	}
+	.col-lg-2{
+		width:16.66%;
+	}
+	.col-lg-3{
+		width:25%;
+	}
+	.col-lg-4{
+		width:33.33%;
+	}
+	.col-lg-5{
+		width:41.66;
+	}
+	.col-lg-6{
+		width:50%;
+	}
+	.col-lg-7{
+		width:58.33%;
+	}
+	.col-lg-8{
+		width:66.66%;
+	}
+	.col-lg-9{
+		width:74.99%;
+	}
+	.col-lg-10{
+		width:83.33%;
+	}
+	.col-lg-11{
+		width:91.66%;
+	}
+	.col-lg-12{
+		width:100%;
+	}
+
+}
+@media(min-width: 768px) and (max-width: 991px){
+	.col-md-1,.col-md-2,.col-md-3 ,.col-md-4 ,.col-md-5 ,.col-md-6 ,.col-md-7 ,.col-md-8 ,.col-md-9 ,.col-md-10 ,.col-md-11 ,.col-md-12{
+		float: left;
+	}
+	.col-md-1{
+		width:8.33%;
+	}
+	.col-md-2{
+		width:16.66%;
+	}
+	.col-md-3{
+		width:25%;
+	}
+	.col-md-4{
+		width:33.33%;
+	}
+	.col-md-5{
+		width:41.66;
+	}
+	.col-md-6{
+		width:50%;
+	}
+	.col-md-7{
+		width:58.33%;
+	}
+	.col-md-8{
+		width:66.66%;
+	}
+	.col-md-9{
+		width:74.99%;
+	}
+	.col-md-10{
+		width:83.33%;
+	}
+	.col-md-11{
+		width:91.66%;
+	}
+	.col-md-12{
+		width:100%;
+	}
+}
+
+#Sport,#Cuisine,#PC,#Vetement,#Livre,#Voiture,#Smartphone,#Decoration,#Projet{
+	border: 1px solid #344F6E;
+	background-color:#BBD2DF;
+	width: auto;
+	height: 250PX;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-family: Helvetica;
+	color: black;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+#Sport span{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	border: 2px solid #344F6E;
+    background-color: #437090;
+    color: white;
+	opacity: .8;
+}
+#Sport:hover,#Cuisine:hover,#PC:hover,#Vetement:hover,#Livre:hover,#Voiture:hover,#Smartphone:hover,#Decoration:hover,#Projet:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#Cuisine span{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	border: 2px solid #344F6E;
+    background-color: #437090;
+    color: white;
+	opacity: .8;
+}
+
+#PC span{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	border: 2px solid #344F6E;
+    background-color: #437090;
+    color: white;
+	opacity: .8;
+}
+#Vetement span{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	border: 2px solid #344F6E;
+    background-color: #437090;
+    color: white;
+	opacity: .8;
+}
+#Livre span{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	border: 2px solid #344F6E;
+    background-color: #437090;
+    color: white;
+	opacity: .8;
+}
+#voiture span{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	border: 2px solid #344F6E;
+    background-color: #437090;
+    color: white;
+	opacity: .8;
+}
+#Smartphone span{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	border: 2px solid #344F6E;
+    background-color: #437090;
+    color: white;
+	opacity: .8;
+}
+#Voiture span{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	border: 2px solid #344F6E;
+    background-color: #437090;
+    color: white;
+	opacity: .8;
+}
+#Decoration span{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	border: 2px solid #344F6E;
+    background-color: #437090;
+    color: white;
+	opacity: .8;
+}
+#Projet span{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	opacity: .8;
+	border: 2px solid #344F6E;
+    background-color: #437090;
+    color: white;
+}
+div.Tittre{
+	background-color: #3698C8;
+	border-radius: 2px;
+	margin-top: 10px;
+	height: 50px;
+	color: #B9CAD3;
+	border: 5px solid #3698C8;
+	text-align: center;
+	width: auto;
+	background-size: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#Book {
+	border: 2px solid #3698C8;
+	background-color: #C8DAF5;
+	width: 10%;
+	height: 200px;
+	margin-right: 5px; 
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	text-align: center;
+	color: black;
+	border-radius: 10px;
+
+}
+nav.LivreMenu ul span.BTN{
+	list-style-type: none;
+	
+	padding-top: 10px;	
+	height: 100%;
+	background-size: 100%;
+	box-sizing:border-box;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px
+}
+nav.LivreMenu ul span.BTN a:link , a:visited  {
+	background-color: #5FC7D4;
+	border: 5px solid #5FC7D4;
+	color: white;
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin-bottom: 2px;
+	text-align: center;
+	padding: 0px;
+	margin-left: 10px;
+	border-radius: 5px
+
+}
+
+
+
+
+nav.LivreMenu ul span.BTN a:hover , a:active{
+	background-color: #3698C8;
+	border: 5px solid #3698C8;
+	color: white;
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin-bottom: 1px;
+	text-align: center;
+
+
+}
+#Exemple{
+	background-size: 100%;
+	background-color: #84CFD3;
+	color: #037076;
+	border: 1px solid #068990;
+	border-radius: 5px;
+	margin: 0px;
+	margin-top:10px;
+	padding: 0px;
+	width: auto;
+	text-align: center;
+}
+
+
+
+
+
+
+
+    </style>
+<body>
+	
+	<header>
+		<nav class="Nav_menu">
+			<div><p class="title"><h1>E-commerce</h1></p></div>
+			<div class="Inscription">
+				<span ><input type="text" name="Email" placeholder="Vous@example.com"></span>
+		        <span><input type="password" name="LastName" placeholder="Mot de passe"></span><br>
+		        <span><input type="Recherche" name="Recherche" placeholder="Recherche"></span>
+		        <span><input type="button" value="connectez" onclick="Data()"></span>
+		        <span><input type="button" value="Inscrez-vous" onclick="Data()"></span>
+			</div>
+		</nav>
+	</header>
+	<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Acceuil</a>
+  <a href="#news">Actualite</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Offre 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="row">
+		<div class="col-lg-4 col-md-4" ><a href="C:\Users\lenovo\Desktop\E-commerce_Site\htlmSheet\Sport.html"><div id="Sport"><video autoplay="autoplay" loop="loop"><source src="https://v.ftcdn.net/03/14/99/95/240_F_314999533_DiYaUerHaZI5ga8cdzafUnVmzW8yHspK_ST.mp4" type="video/mp4"></video><span>EQUIPEMENT SPORT</span></div></a></div>
+		<div class="col-lg-4 col-md-4" ><a href="C:\Users\lenovo\Desktop\E-commerce_Site\htlmSheet\cuisine.html"><div id="Cuisine"><video autoplay="autoplay" loop="loop"><source src="https://v.ftcdn.net/03/14/93/29/240_F_314932928_CO4IAjII04HvdTEWPGRnLEeigUdyF54I_ST.mp4" type="video/mp4"></video><span>EQUIPEMENT CUISINE</span></div></a></div>
+		<div class="col-lg-4 col-md-4" ><a href="C:\Users\lenovo\Desktop\E-commerce_Site\htlmSheet\Informatique.html"><div id="PC"><video autoplay="autoplay" loop="loop"><source src="https://v.ftcdn.net/02/93/65/36/240_F_293653694_S3ubI2C5khO1A8HLWVH21DQ9Qk0OwPxE_ST.mp4" type="video/mp4"></video><span>EQUIPEMENT INFORMATIQUE</span></div></a></div>
+		<div class="col-lg-4 col-md-4" ><a href="C:\Users\lenovo\Desktop\E-commerce_Site\htlmSheet\Vetement.html"><div id="Vetement"><video autoplay="autoplay" loop="loop"><source src="https://v.ftcdn.net/02/98/82/34/240_F_298823409_8f5JovAAXgu7rGqHHLkU2NOWEgCb5FB4_ST.mp4" type="video/mp4"></video><span>VETEMENT</span></div></a></div>
+		<div class="col-lg-4 col-md-4" ><a href="C:\Users\lenovo\Desktop\E-commerce_Site\htlmSheet\Livre.html"><div id="Livre"><video autoplay="autoplay" loop="loop"><source src="https://v.ftcdn.net/03/17/19/42/240_F_317194243_OeihHG897pwMeFjRwRKw3mvpx88DQ3me_ST.mp4" type="video/mp4"></video><span>LIVRE</span></div></a></div>
+		<div class="col-lg-4 col-md-4" ><a href="C:\Users\lenovo\Desktop\E-commerce_Site\htlmSheet\Voiture.html"><div id="Voiture"><video autoplay="autoplay" loop="loop"><source src="https://v.ftcdn.net/03/03/21/40/240_F_303214053_2iqRYkMRWfXPHSiFTHxirxQ6TbFkL1oE_ST.mp4" type="video/mp4"></video><span>VOITURE</span></div></a></div>
+		<div class="col-lg-4 col-md-4"><a href="C:\Users\lenovo\Desktop\E-commerce_Site\htlmSheet\Smartphone.html"><div id="Smartphone"><video autoplay="autoplay" loop="loop"><source src="https://v.ftcdn.net/02/97/77/15/240_F_297771504_PaWPnJk6Y4zXB59PvMU8yUZSLQmxvq9B_ST.mp4" type="video/mp4"></video><span>SMARTPHONE</span></div></a>></div>
+		<div class="col-lg-4 col-md-4" ><a href="C:\Users\lenovo\Desktop\E-commerce_Site\htlmSheet\Decoration.html"><div id="Decoration"><video autoplay="autoplay" loop="loop"><source src="https://v.ftcdn.net/03/32/08/01/240_F_332080130_xJ3msq0Dl1ccyk9FLr2u9UsExmYcdejQ_ST.mp4" type="video/mp4"></video><span>DECORATION</span></div></a></div>
+		<div class="col-lg-4 col-md-4" ><a href="C:\Users\lenovo\Desktop\E-commerce_Site\htlmSheet\Compo_elec.html"><div id="Projet"><video autoplay="autoplay" loop="loop"><source src="https://v.ftcdn.net/03/30/62/50/240_F_330625015_ioC7t5QuYdqcpVaRfwGHlhaQBOPclxUJ_ST.mp4" type="video/mp4"></video><span>COMPOSANT ELECTRONIQUE</span></div></a></div>
+	</div>
+
+
+</body>
+</html>
